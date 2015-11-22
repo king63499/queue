@@ -1,3 +1,10 @@
+/*
+ this is Circular Queue, if head pointer and rear pointer point to same place, we know the queue is empty, 
+ but in Circular Queue, when the two pointer are point to same place, it maybe also indecate the queue is full.  
+ so we need to remain last element to empty, to avoid the two pointers point to same place. so, when the queue is full,
+ the rear pointer plus 1 will equal to head pointer. of course we need return to start place when the pointer out of 
+ the range of the array.   
+*/
 #include <stdio.h>
 #define QUEUE_SIZE 5
 
